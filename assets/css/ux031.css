@@ -1,0 +1,311 @@
+/* WP-031 — guided presentation, explore hub, evidence library UX */
+
+.premium-portal .content-page--guided {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium-portal .content-page--wide {
+  max-width: var(--max);
+}
+
+.premium-portal .level-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.8rem;
+}
+
+.premium-portal .level-pill {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.premium-portal .level-pill.is-active {
+  background: var(--teal-100);
+  border-color: var(--teal-500);
+  color: var(--navy-800);
+  font-weight: 600;
+}
+
+.premium-portal .journey-progress {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.premium-portal .journey-progress a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--navy-800);
+  font-size: 0.92rem;
+}
+
+.premium-portal .journey-progress a:hover {
+  border-color: var(--teal-500);
+}
+
+.premium-portal .journey-progress .step-num {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--navy-800);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.premium-portal .story-section {
+  margin: 2rem 0;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--border);
+}
+
+.premium-portal .story-section:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.premium-portal .story-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: var(--navy-900);
+}
+
+.premium-portal .story-section h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--navy-800);
+}
+
+.premium-portal .prose {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.premium-portal .prose p {
+  margin: 0 0 1rem;
+}
+
+.premium-portal .prose ul,
+.premium-portal .prose ol {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.premium-portal .callout {
+  background: var(--surface);
+  border-left: 4px solid var(--teal-500);
+  padding: 0.85rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.95rem;
+}
+
+.premium-portal .callout--muted {
+  border-left-color: var(--border);
+  color: var(--muted);
+}
+
+.premium-portal .module-journey {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.premium-portal .module-journey li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.premium-portal .module-journey strong {
+  display: block;
+  color: var(--navy-800);
+  margin-bottom: 0.25rem;
+}
+
+.premium-portal .module-journey span {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.premium-portal .explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.premium-portal .explore-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.premium-portal .explore-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.premium-portal .explore-card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.premium-portal .explore-card--accent {
+  border-color: var(--teal-400);
+  background: linear-gradient(135deg, #f0fdfa 0%, #fff 55%);
+}
+
+.premium-portal .breadcrumb {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.premium-portal .explore-card .card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.premium-portal .btn-text {
+  font-size: 0.9rem;
+  color: var(--teal-500);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.premium-portal .btn-text:hover {
+  text-decoration: underline;
+}
+
+.premium-portal .security-notice--compact {
+  margin: 0 0 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  background: #f8fafc;
+  border-left: 3px solid #94a3b8;
+  color: var(--muted);
+}
+
+.premium-portal .status-banner--compact {
+  margin: 0.5rem 0 0;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.88rem;
+}
+
+.premium-portal .status-banner--compact .status-banner__meta {
+  display: none;
+}
+
+.premium-portal .utility-footer-nav {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.premium-portal .utility-footer-nav a {
+  color: #cbd5e1;
+  margin-right: 0.75rem;
+}
+
+.premium-portal .evidence-intro {
+  max-width: 40rem;
+  margin-bottom: 1.25rem;
+}
+
+.premium-portal .cat-details {
+  margin-bottom: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.premium-portal .cat-details summary {
+  cursor: pointer;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  color: var(--navy-800);
+  list-style: none;
+}
+
+.premium-portal .cat-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.premium-portal .cat-details summary::before {
+  content: "▸ ";
+  color: var(--teal-500);
+}
+
+.premium-portal .cat-details[open] summary::before {
+  content: "▾ ";
+}
+
+.premium-portal .cat-details .doc-list {
+  margin: 0;
+  padding: 0 1rem 0.75rem;
+}
+
+.premium-portal .diagram-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+}
+
+.premium-portal .diagram-flow span {
+  background: var(--teal-100);
+  color: var(--navy-800);
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+}
+
+.premium-portal .diagram-flow .arrow {
+  background: none;
+  color: var(--muted);
+  padding: 0;
+}
+
+@media (min-width: 769px) {
+  .premium-portal .journey-progress {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .premium-portal .journey-progress a {
+    flex: 1 1 9rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

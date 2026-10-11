@@ -1,0 +1,38 @@
+.local-only-notice {
+  margin: 1rem 0 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 2px dashed #7c2d12;
+  background: #fff7ed;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.content-page h1 { margin-top: 0.25rem; }
+
+.pdf-list { padding-left: 1.25rem; }
+.pdf-list li { margin: 0.5rem 0; }
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+.data-table th,
+.data-table td {
+  border: 1px solid var(--border, #e2e8f0);
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+}
+.data-table th { background: #f1f5f9; }
+
+.site-footer {
+  margin: 2rem auto 3rem;
+  font-size: 0.85rem;
+  color: var(--muted, #4a5568);
+}
+
+.nav-menu a.active {
+  font-weight: 700;
+  text-decoration: underline;
+}

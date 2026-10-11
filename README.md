@@ -1,14 +1,10 @@
-# Class 1 publication candidate (audited copy)
+# GDI Class 1 — NZTA course presentation (public)
 
-**Work package:** GDI-CLASS1-ACADEMY-PRESENTATION-008
+Public supplementary presentation for the Get Driving Instructor NZTA Class 1 learner licence course (RC2-CHG-063). **Course and provider approval are pending NZTA.**
 
-Byte-identical copy of `GDI_CLASS1_LOCAL_PRESENTATION/` for future GitHub Pages packaging.
+- **Live site:** https://dammy78.github.io/gdi-class1-course-presentation/
+- **Academy showcase (separate):** https://dammy78.github.io/gdi-academy-review-presentation/
 
-**Not published.** PO approval required per [PRODUCT_OWNER_PUBLICATION_APPROVAL_REGISTER.md](../PRODUCT_OWNER_PUBLICATION_APPROVAL_REGISTER.md).
+This repository contains only public-safe HTML/CSS/JS and two NZTA regulatory reference PDFs. Confidential submission materials are not published here.
 
-Preview locally:
-
-```bash
-cd docs/nzta/class1/provider-approval/PRESENTATION_008/class1-publication-candidate
-python3 -m http.server 8766
-```
+Restored overview snapshot tag: `backup-pre-wp034-public-20261011`.
