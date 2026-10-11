@@ -219,21 +219,58 @@ body.premium-portal {
 
 .premium-portal .site-footer p { margin: 0; }
 
+.premium-portal .academy-embed {
+  margin: 1.25rem 0 2rem;
+}
+
+.premium-portal .academy-embed__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.premium-portal .academy-embed__label {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.premium-portal .academy-embed__hint {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.premium-portal .academy-embed__scroller {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: min(920px, 88vh);
+}
+
 .premium-portal .academy-frame-wrap {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
+  overflow: auto;
   box-shadow: var(--shadow);
   margin: 1rem 0;
 }
 
 .premium-portal .academy-frame {
   width: 100%;
-  min-height: 480px;
-  height: 70vh;
+  min-height: 900px;
+  height: 900px;
   border: 0;
   display: block;
+  vertical-align: top;
 }
 
 .premium-portal .btn-primary {
@@ -269,7 +306,8 @@ body.premium-portal {
   }
   .premium-portal .nav-menu.is-open { display: flex; }
   .premium-portal .hero h1 { font-size: 1.35rem; }
-  .premium-portal .academy-frame { min-height: 360px; height: 50vh; }
+  .premium-portal .academy-embed__scroller { max-height: min(640px, 72vh); }
+  .premium-portal .academy-frame { min-height: 720px; height: 720px; }
 }
 
 .premium-portal .visually-hidden {
